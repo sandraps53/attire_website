@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attire</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <!-- font awesome cdn -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center justify-content-center order-lg-0" href="example.html">
+            <img src="./shopping-bag.png" alt="site icon">
+            <span class="text-uppercase fw-500 ms-2">Attire</span>
+        </a>
+
+        <div class="order-lg-2 nav-btns">
+          <button class="btn position-relative" type="button">
+            <i class="fa-solid fa-cart-shopping "></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge text-light ">5</span>
+          </button>
+          <button class="btn position-relative" type="button">
+            <i class="fa-solid fa-heart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge text-light">2</span>
+          </button>
+          <button class="btn position-relative" type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>          
+          </button>
+        </div>
+
+          <button class="navbar-toggler border-0 order-lg-2" type="button" data-bs-target="#navMenu" data-bs-toggle="collapse">
+           <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+           <ul class="navbar-nav mx-auto text-center ">
+             <li class="nav-item text-dark text-uppercase px-2 py-2">
+                <a class="nav-link" href="#header">Home</a>
+             </li>
+             <li class="nav-item text-dark text-uppercase px-2 py-2">
+                <a class="nav-link" href="#collection">Collection</a>
+             </li>
+             <li class="nav-item text-dark text-uppercase px-2 py-2">
+                <a class="nav-link" href="#special">Specials</a>
+             </li>
+             <li class="nav-item text-dark text-uppercase px-2 py-2">
+                <a class="nav-link" href="#blog">Blogs</a>
+             </li>
+             <li class="nav-item text-dark text-uppercase px-2 py-2">
+                <a class="nav-link" href="#about">About Us</a>
+             </li>
+             <li class="nav-item text-dark text-uppercase px-2 py-2 border-0">
+                <a class="nav-link" href="#popular">Popular</a>
+             </li>
+           </ul>
+          </div>
+       
+   
+      </div>
+    </nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src=" https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Los Angeles" class="d-block" style="width:100% height=100%">
+      <div class="carousel-caption">
+        <h2 class="">Best Collection</h2>
+        <h1 class="text-uppercase py-2 fw-bold ">New ARRIVALS</h1>
+        <a href="#" class="btn mt-3 text-uppercase">buy now</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src=" https://images.pexels.com/photos/8386662/pexels-photo-8386662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Chicago" class="d-block" style="width:100% height=100%">
+      <div class="carousel-caption">
+        <h2 class="">Best Price & Offer</h2>
+        <h1 class="text-uppercase py-2 fw-bold ">new season</h1>
+        <a href="#" class="btn mt-3 text-uppercase">buy now</a>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/13758357/pexels-photo-13758357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Los Angeles" class="d-block" style="width:100% height=100%">
+      <div class="carousel-caption">
+        <h2 class="">Best Collection</h2>
+        <h1 class="text-uppercase py-2 fw-bold ">New ARRIVALS</h1>
+        <a href="#" class="btn mt-3 text-uppercase">buy now</a>
+      </div>
+
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- collection -->
+ <section id="collection" class="py-5">
+  <div class="container">
+    <div class="title text-center">
+      <h2 class="position-relative d-inline-block">New Collection</h2>
+    </div>
+
+    <div class="row g-0">
+      <div class="d-flex flex-wrap justify-content-center mt-5">
+        <button class="btn m-2 text-dark active-filter-btn" type="button">All</button>
+        <button class="btn m-2 text-dark" type="button">Best Sellers</button>
+        <button class="btn m-2 text-dark" type="button">Featured</button>
+        <button class="btn m-2 text-dark" type="button">New Arrival</button>
+      </div>
+
+      <div class="collection-list mt-4 row gx-0 gy-3">
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+           <div class="collection-img position-relative">
+            <img src="https://plus.unsplash.com/premium_photo-1690338235263-68f2c173b5cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z2lybHMlMjBzaGlydCUyMGltZ3xlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-100">
+            <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
+           </div>
+           <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">tint shirt</p>
+            <p class="fw-bold">$ 45.50</p>
+           </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+           <div class="collection-img position-relative">
+            <img src="https://img.freepik.com/free-photo/young-attractive-indian-woman-traditional-dress-woman-dancing-against-white-background_1157-48166.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100" >
+            <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
+           </div>
+           <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">tint shirt</p>
+            <p class="fw-bold">$ 45.50</p>
+           </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+           <div class="collection-img position-relative">
+            <img src="https://img.freepik.com/free-photo/young-woman-beautiful-yellow-dress_1303-17536.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100">
+            <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
+           </div>
+           <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">tint shirt</p>
+            <p class="fw-bold">$ 45.50</p>
+           </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+           <div class="collection-img position-relative">
+            <img src="https://img.freepik.com/premium-photo/woman-dress-with-bag-her-head_658385-38.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100">
+            <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
+           </div>
+           <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">tint shirt</p>
+            <p class="fw-bold">$ 45.50</p>
+           </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+           <div class="collection-img position-relative">
+            <img src="https://img.freepik.com/premium-photo/portrait-beautiful-young-indian-woman-wearing-traditional-clothes-outdoors_251136-85944.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100">
+            <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
+           </div>
+           <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">tint shirt</p>
+            <p class="fw-bold">$ 45.50</p>
+           </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+           <div class="collection-img position-relative">
+            <img src="https://img.freepik.com/premium-photo/glad-asian-female-authentic-ornamental-dress-touching-chin-looking-camera-against_102814-1483.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100">
+            <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
+           </div>
+           <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">linen dress</p>
+            <p class="fw-bold">$ 45.50</p>
+           </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+           <div class="collection-img position-relative">
+            <img src="https://img.freepik.com/free-photo/girl-linen-dress-with-wreath-flowers-her-head_72229-249.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100">
+            <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
+           </div>
+           <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">tint shirt</p>
+            <p class="fw-bold">$ 45.50</p>
+           </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+           <div class="collection-img position-relative">
+            <img src="https://img.freepik.com/premium-photo/traditional-wear-women-ethnic-attire-indian-cultural-fashion-photography_788415-7733.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100">
+            <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
+           </div>
+           <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+              <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">tint shirt</p>
+            <p class="fw-bold">$ 45.50</p>
+           </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ </section>
+ <!-- end of collection -->
+  <!-- special products   -->
+   <section id="special" class="py-5">
+   <div class="container">
+    <div class="title text-center py-5">
+    <h2 class="position-relative d-inline-block">Special Selection</h2>
+    </div>
+
+    <div class="special-list row g-0">
+      <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="special-img position-relative overflow-hidden">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSMakNtk3lmDrku5Bh-LCrprFo64H7Gulr6zECk0tjxRkKK0KX0gwMBGHt2JBzifSMhdkPrLaKZXasyumpmPMbBbmz7Do1jS9et55GKhSwbobu7jyoRZM85aw&usqp=CAc" alt="" class="w-100">
+          <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"><i class="fa-solid fa-heart"></i></span>
+        </div>
+        
+        <div class="text-center">
+          <p class="text-capitalize mt-3 mb-1">Kalini ethinic</p>
+          <span class="fw-bold d-block">&#8377 1,695</span>
+          <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+        </div>
+
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="special-img position-relative overflow-hidden">
+          <img src="https://img.freepik.com/free-photo/beautiful-young-woman-wearing-fashionable-clothes-walking-down-street_839833-3813.jpg?t=st=1739120145~exp=1739123745~hmac=199665c1de97a259a2f78b3ec75959ec619817bf9371ce9d3497ca9d56411450&w=360" alt="" class="w-100">
+          <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"><i class="fa-solid fa-heart"></i></span>
+        </div>
+        
+        <div class="text-center">
+          <p class="text-capitalize mt-3 mb-1">Anouk Floral</p>
+          <span class="fw-bold d-block">&#8377 1,763</span>
+          <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+        </div>
+
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="special-img position-relative overflow-hidden">
+          <img src="https://github.com/prabinmagar/attire-shopping-site-using-bootstrap-5/blob/master/images/special_product_4.jpg?raw=true" alt="" class="w-100">
+          <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"><i class="fa-solid fa-heart"></i></span>
+        </div>
+        
+        <div class="text-center">
+          <p class="text-capitalize mt-3 mb-1">Swadeshi Shringaar</p>
+          <span class="fw-bold d-block">&#8377 1,599</span>
+          <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+        </div>
+
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="special-img position-relative overflow-hidden">
+          <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ5paPZyvEq7yiK-PrT84j_MFkIOIx7Yw5SaWGSMy9nKs6O9WOXsTMz3eqBMUl-PSvtjMn0au-Zh0IMwtJ0M80rIsNpb7veJnAzkS-H7GdzIdui_jiFRs2-&usqp=CAc" alt="" class="w-100">
+          <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"><i class="fa-solid fa-heart"></i></span>
+        </div>
+        
+        <div class="text-center">
+          <p class="text-capitalize mt-3 mb-1">white world floral print</p>
+          <span class="fw-bold d-block">&#8377 899</span>
+          <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+        </div>
+
+      </div>
+    </div>
+   </div>
+   </section>
+
+   <!-- offers -->
+  <section id="offers" class="py-5">
+    <div class="container">
+      <div class="row d-flex align-items-center text-center justify-content-lg-start text-">
+        <div class="offer-content ">
+          <span class="text-white">Discount Up To 40%</span>
+          <h2 class="mt-2 mb-4 text-white">Grand Sale Offer!</h2>
+          <a href="#" class="btn text-dark">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blogs -->
+  <section id = "blogs" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center py-5">
+            <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+        </div>
+
+        <div class = "row g-3">
+            <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                <img src = "https://github.com/prabinmagar/attire-shopping-site-using-bootstrap-5/blob/master/images/blog_1.jpg?raw=true" alt = "">
+                <div class = "card-body px-0">
+                    <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                    <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione</p>
+                    <p class = "card-text">
+                        <small class = "text-muted">
+                            <span class = "fw-bold">Author: </span>John Doe
+                        </small>
+                    </p>
+                    <a href = "#" class = "btn">Read More</a>
+                </div>
+            </div>
+            <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+              <img src = "https://images.unsplash.com/photo-1556740772-1a741367b93e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRyZWVzJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D" alt = "">
+              <div class = "card-body px-0">
+                  <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                  <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione.</p>
+                  <p class = "card-text">
+                      <small class = "text-muted">
+                          <span class = "fw-bold">Author: </span>John Doe
+                      </small>
+                  </p>
+                  <a href = "#" class = "btn">Read More</a>
+              </div>
+          </div>
+
+          <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+              <img src = "https://github.com/prabinmagar/attire-shopping-site-using-bootstrap-5/blob/master/images/blog_3.jpg?raw=true" alt = "">
+              <div class = "card-body px-0">
+                  <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                  <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione .</p>
+                  <p class = "card-text">
+                      <small class = "text-muted">
+                          <span class = "fw-bold">Author: </span>John Doe
+                      </small>
+                  </p>
+                  <a href = "#" class = "btn">Read More</a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- end of blogs -->
+   <!-- about us -->
+   <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://plus.unsplash.com/premium_photo-1661370380984-d8054132dec0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Us</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi, illum doloremque vero at tempora soluta obcaecati! Provident, exercitationem voluptatibus beatae perspiciatis fugiat quos dolorem quaerat doloribus sed atque voluptas!</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#modal1"
+        >
+          Order Now
+        </button>
+         
+        <div class="modal" id="modal1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <!-- <h4 class="modal-title">First Generation</h4> -->
+    
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <main>
+                    <div class="py-5 text-center">
+                      <img class="d-block mx-auto mb-4" src="./shopping-bag.png" alt="" width="72" height="57">
+                      <h2>Checkout form</h2>
+                      <!-- <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p> -->
+                    </div>
+                
+                    <div class="row g-5">
+                      <div class="col-md-5 col-lg-4 order-md-last">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                          <span class="text-primary">Your cart</span>
+                          <span class="badge bg-primary rounded-pill">3</span>
+                        </h4>
+                        <ul class="list-group mb-3">
+                          <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                              <h6 class="my-0">Product name</h6>
+                              <small class="text-body-secondary">Brief description</small>
+                            </div>
+                            <span class="text-body-secondary">$12</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                              <h6 class="my-0">Second product</h6>
+                              <small class="text-body-secondary">Brief description</small>
+                            </div>
+                            <span class="text-body-secondary">$8</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                              <h6 class="my-0">Third item</h6>
+                              <small class="text-body-secondary">Brief description</small>
+                            </div>
+                            <span class="text-body-secondary">$5</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                            <div class="text-success">
+                              <h6 class="my-0">Promo code</h6>
+                              <small>EXAMPLECODE</small>
+                            </div>
+                            <span class="text-success">−$5</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (USD)</span>
+                            <strong>$20</strong>
+                          </li>
+                        </ul>
+                
+                        <form class="card p-2">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">Billing address</h4>
+                        <form class="needs-validation" novalidate="">
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label for="firstName" class="form-label">First name</label>
+                              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                              <div class="invalid-feedback">
+                                Valid first name is required.
+                              </div>
+                            </div>
+                
+                            <div class="col-sm-6">
+                              <label for="lastName" class="form-label">Last name</label>
+                              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                              <div class="invalid-feedback">
+                                Valid last name is required.
+                              </div>
+                            </div>
+                
+                            <div class="col-12">
+                              <label for="username" class="form-label">Username</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                              <div class="invalid-feedback">
+                                  Your username is required.
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="col-12">
+                              <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                              <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                              </div>
+                            </div>
+                
+                            <div class="col-12">
+                              <label for="address" class="form-label">Address</label>
+                              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                              <div class="invalid-feedback">
+                                Please enter your shipping address.
+                              </div>
+                            </div>
+                
+                            <div class="col-12">
+                              <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                            </div>
+                
+                            <div class="col-md-5">
+                              <label for="country" class="form-label">Country</label>
+                              <select class="form-select" id="country" required="">
+                                <option value="">Choose...</option>
+                                <option>United States</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Please select a valid country.
+                              </div>
+                            </div>
+                
+                            <div class="col-md-4">
+                              <label for="state" class="form-label">State</label>
+                              <select class="form-select" id="state" required="">
+                                <option value="">Choose...</option>
+                                <option>California</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Please provide a valid state.
+                              </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                              <label for="zip" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="zip" placeholder="" required="">
+                              <div class="invalid-feedback">
+                                Zip code required.
+                              </div>
+                            </div>
+                          </div>
+                
+                          <hr class="my-4">
+                
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                          </div>
+                
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">Save this information for next time</label>
+                          </div>
+                
+                          <hr class="my-4">
+                
+                          <h4 class="mb-3">Payment</h4>
+                
+                          <div class="my-3">
+                            <div class="form-check">
+                              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                              <label class="form-check-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="form-check">
+                              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                              <label class="form-check-label" for="debit">Debit card</label>
+                            </div>
+                            <div class="form-check">
+                              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                              <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                          </div>
+                
+                          <div class="row gy-3">
+                            <div class="col-md-6">
+                              <label for="cc-name" class="form-label">Name on card</label>
+                              <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                              <small class="text-body-secondary">Full name as displayed on card</small>
+                              <div class="invalid-feedback">
+                                Name on card is required
+                              </div>
+                            </div>
+                
+                            <div class="col-md-6">
+                              <label for="cc-number" class="form-label">Credit card number</label>
+                              <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                              <div class="invalid-feedback">
+                                Credit card number is required
+                              </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                              <label for="cc-expiration" class="form-label">Expiration</label>
+                              <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                              <div class="invalid-feedback">
+                                Expiration date required
+                              </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                              <label for="cc-cvv" class="form-label">CVV</label>
+                              <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                              <div class="invalid-feedback">
+                                Security code required
+                              </div>
+                            </div>
+                          </div>
+                
+                          <hr class="my-4">
+                
+                          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                        </form>
+                      </div>
+                    </div>
+                  </main>
+                
+                  <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+                    <p class="mb-1">© 2017–2024 Attire</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="#">Privacy</a></li>
+                      <li class="list-inline-item"><a href="#">Terms</a></li>
+                      <li class="list-inline-item"><a href="#">Support</a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     <!-- footer -->
+     <footer class = "bg-dark py-5" id="footer">
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">About</a></li>
+          </ul>
+          <p class="text-center text-body-light">© 2025 ATTIRE, Inc</p>
+        </footer>
+      </div>
+  </footer>
+
+  </div>
+</body>
+</html>
