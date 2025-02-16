@@ -33,56 +33,87 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center justify-content-center order-lg-0" href="example.html">
-            <img src="./shopping-bag.png" alt="site icon">
-            <span class="text-uppercase fw-500 ms-2">Attire</span>
-        </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+            <div class="container">
+              <a class="navbar-brand d-flex align-items-center justify-content-center order-lg-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"  href="offcanvasScrolling">
+                  <img src="./shopping-bag.png" alt="site icon">
+                  <span class="text-uppercase fw-500 ms-2">Attire</span>
+                  <i class="fa-solid fa-magnifying-glass fa-beat ms-2"></i>
+              </a>
+      
+              <div class="order-lg-2 nav-btns">
+                <button class="btn position-relative" type="button">
+                  <i class="fa-solid fa-cart-shopping "></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge text-light ">5</span>
+                </button>
+                <button class="btn position-relative" type="button">
+                  <i class="fa-solid fa-heart"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge text-light">2</span>
+                </button>
+                <!-- <button class="btn position-relative" type="button">
+                  <i class="fa-solid fa-magnifying-glass"></i>          
+                </button> -->
+              </div>
+      
+                <button class="navbar-toggler border-0 order-lg-2" type="button" data-bs-target="#navMenu" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                 <ul class="navbar-nav mx-auto text-center ">
+                   <li class="nav-item text-dark text-uppercase px-2 py-2">
+                      <a class="nav-link" href="#header">Home</a>
+                   </li>
+                   <li class="nav-item text-dark text-uppercase px-2 py-2">
+                      <a class="nav-link" href="#collection">Collection</a>
+                   </li>
+                   <li class="nav-item text-dark text-uppercase px-2 py-2">
+                      <a class="nav-link" href="#special">Specials</a>
+                   </li>
+      
+                   <li class="nav-item text-dark text-uppercase px-2 py-2">
+                      <a class="nav-link" href="#aboutus">About Us</a>
+                   </li>
+                   <li class="nav-item text-dark text-uppercase px-2 py-2">
+                    <a class="nav-link" href="#services">Services</a>
+                 </li>
+                 <li class="nav-item dropdown text-uppercase px-2 py-2">
+                    <a class="nav-link dropdown-toggle text-dark " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Popular
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Kurtis</a></li>
+                    <li><a class="dropdown-item" href="#">Saree</a></li>
+                    <li><a class="dropdown-item" href="#">Frock</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item " href="#">Western</a></li>
+                    <li><a class="dropdown-item " href="#">Party Wear</a></li>
+                    </ul>
+                </li>
+                 
+                </div>
 
-        <div class="order-lg-2 nav-btns">
-          <button class="btn position-relative" type="button">
-            <i class="fa-solid fa-cart-shopping "></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge text-light ">5</span>
-          </button>
-          <button class="btn position-relative" type="button">
-            <i class="fa-solid fa-heart"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge text-light">2</span>
-          </button>
-          <button class="btn position-relative" type="button">
-            <i class="fa-solid fa-magnifying-glass"></i>          
-          </button>
-        </div>
-
-          <button class="navbar-toggler border-0 order-lg-2" type="button" data-bs-target="#navMenu" data-bs-toggle="collapse">
-           <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse order-lg-1" id="navMenu">
-           <ul class="navbar-nav mx-auto text-center ">
-             <li class="nav-item text-dark text-uppercase px-2 py-2">
-                <a class="nav-link" href="#header">Home</a>
-             </li>
-             <li class="nav-item text-dark text-uppercase px-2 py-2">
-                <a class="nav-link" href="#collection">Collection</a>
-             </li>
-             <li class="nav-item text-dark text-uppercase px-2 py-2">
-                <a class="nav-link" href="#special">Specials</a>
-             </li>
-             <li class="nav-item text-dark text-uppercase px-2 py-2">
-                <a class="nav-link" href="#blog">Blogs</a>
-             </li>
-             <li class="nav-item text-dark text-uppercase px-2 py-2">
-                <a class="nav-link" href="#about">About Us</a>
-             </li>
-             <li class="nav-item text-dark text-uppercase px-2 py-2 border-0">
-                <a class="nav-link" href="#popular">Popular</a>
-             </li>
-           </ul>
-          </div>
-       
-   
-      </div>
-    </nav>
+             
+         
+            </div>
+          </nav>
+          <span>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Shop By</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Kurtis</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Christmas Collections</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Onam Collections</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Kaftans</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Fabric</a></li>
+                    <li class="list-group-item"><a href="#" class="text-decoration-none text-dark">Lehenga</a></li>
+                  </ul>
+            </div>
+            </div>
+        </span>
 
 <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -97,7 +128,7 @@
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src=" https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Los Angeles" class="d-block" style="width:100% height=100%">
+      <img src="https://images.pexels.com/photos/5531541/pexels-photo-5531541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Los Angeles" class="d-block" style="width:100% height=100%">
       <div class="carousel-caption">
         <h2 class="">Best Collection</h2>
         <h1 class="text-uppercase py-2 fw-bold ">New ARRIVALS</h1>
@@ -149,7 +180,7 @@
       <div class="collection-list mt-4 row gx-0 gy-3">
         <div class="col-md-6 col-lg-4 col-xl-3 p-2">
            <div class="collection-img position-relative">
-            <img src="https://plus.unsplash.com/premium_photo-1690338235263-68f2c173b5cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z2lybHMlMjBzaGlydCUyMGltZ3xlbnwwfHwwfHx8MA%3D%3D" alt="" class="w-100">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTAFTosoRlMoCWoOOYu38kq23hDCNaQPIdUOT3gd89NqfjXSOiy4wTDw2ZIk65MgbsYII0HIOaxA2aNWeu9aU03Wjz8xpi7ULVAGBODNrNmgSX7d8fwmBpmQ" alt="" class="w-100">
             <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
            </div>
            <div class="text-center">
@@ -160,13 +191,13 @@
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
             </div>
-            <p class="text-capitalize my-1">tint shirt</p>
-            <p class="fw-bold">$ 45.50</p>
+            <p class="text-capitalize my-1">Yellow Pleated</p>
+            <p class="fw-bold">₹ 2450.50</p>
            </div>
         </div>
         <div class="col-md-6 col-lg-4 col-xl-3 p-2">
            <div class="collection-img position-relative">
-            <img src="https://img.freepik.com/free-photo/young-attractive-indian-woman-traditional-dress-woman-dancing-against-white-background_1157-48166.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100" >
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQcjg9CHAr98U87WmHOBHwx7TvwnYxCwCo7EpEBIdxAD5ov3pxvC4ezTLJpiVUKc54YMoCmmHjFQeMa9GDXtep_IKn38k03ka_nZ9UZbWH0v5PaTFDglRqy" alt="" class="w-100" >
             <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
            </div>
            <div class="text-center">
@@ -177,13 +208,13 @@
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
             </div>
-            <p class="text-capitalize my-1">tint shirt</p>
-            <p class="fw-bold">$ 45.50</p>
+            <p class="text-capitalize my-1">Tropical Print</p>
+            <p class="fw-bold">₹ 745.50</p>
            </div>
         </div>
         <div class="col-md-6 col-lg-4 col-xl-3 p-2">
            <div class="collection-img position-relative">
-            <img src="https://img.freepik.com/free-photo/young-woman-beautiful-yellow-dress_1303-17536.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ2I2jMNDDxg24MvKjk3SoiKTfD3RYaeZ-l_ENhpihJkfqpL5wWg8BUZNsTworTY1GH6gHiyj2rvxS7bd9xCpHxJVAr7SphoPArRVeEQ2R2clXXcFL8P93H" alt="" class="w-100">
             <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
            </div>
            <div class="text-center">
@@ -195,7 +226,7 @@
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
             </div>
             <p class="text-capitalize my-1">tint shirt</p>
-            <p class="fw-bold">$ 45.50</p>
+            <p class="fw-bold">₹ 845.50</p>
            </div>
         </div>
         <div class="col-md-6 col-lg-4 col-xl-3 p-2">
@@ -211,8 +242,8 @@
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
             </div>
-            <p class="text-capitalize my-1">tint shirt</p>
-            <p class="fw-bold">$ 45.50</p>
+            <p class="text-capitalize my-1">FUSION Women's Embroidered</p>
+            <p class="fw-bold">₹ 745.50</p>
            </div>
         </div>
         <div class="col-md-6 col-lg-4 col-xl-3 p-2">
@@ -228,13 +259,13 @@
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
             </div>
-            <p class="text-capitalize my-1">tint shirt</p>
-            <p class="fw-bold">$ 45.50</p>
+            <p class="text-capitalize my-1">Yellow kurtis</p>
+            <p class="fw-bold">₹ 945.50</p>
            </div>
         </div>
         <div class="col-md-6 col-lg-4 col-xl-3 p-2">
            <div class="collection-img position-relative">
-            <img src="https://img.freepik.com/premium-photo/glad-asian-female-authentic-ornamental-dress-touching-chin-looking-camera-against_102814-1483.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTzOJWhxLbGtdo4bajxETp3zbZJiddRuJ0zLqWO0CrgPVcHtV0a-vIiviVHlcUiZuyiSK8Gu_QK_F4o4gYMqkDGB8kqAO2AyXBPyivgm90_nWprJS6QxEV9Jw" alt="" class="w-100">
             <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
            </div>
            <div class="text-center">
@@ -245,13 +276,13 @@
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
             </div>
-            <p class="text-capitalize my-1">linen dress</p>
-            <p class="fw-bold">$ 45.50</p>
+            <p class="text-capitalize my-1">V-Neck Strappy </p>
+            <p class="fw-bold">₹ 1045.50</p>
            </div>
         </div>
         <div class="col-md-6 col-lg-4 col-xl-3 p-2">
            <div class="collection-img position-relative">
-            <img src="https://img.freepik.com/free-photo/girl-linen-dress-with-wreath-flowers-her-head_72229-249.jpg?uid=R164764045&ga=GA1.1.865720395.1726995651&semt=ais_hybrid" alt="" class="w-100">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR_sCi8YPaPosmrucaXUbZILOogw1ViyylfY2igsvE27lAJ_TwkLpRIaeQJSPxdAS_Pe78_gngxvoMJpzh_J3aj7ZK4ytl2Kg" alt="" class="w-100">
             <span class="position-absolute bg-new text-light d-flex align-items-center justify-content-center">sale</span>
            </div>
            <div class="text-center">
@@ -262,8 +293,8 @@
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
             </div>
-            <p class="text-capitalize my-1">tint shirt</p>
-            <p class="fw-bold">$ 45.50</p>
+            <p class="text-capitalize my-1">Off-Shoulder</p>
+            <p class="fw-bold">>₹ 1345.50</p>
            </div>
         </div>
         <div class="col-md-6 col-lg-4 col-xl-3 p-2">
@@ -279,8 +310,8 @@
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
               <span class="text-primary"><i class="fa-solid fa-star"></i></span>
             </div>
-            <p class="text-capitalize my-1">tint shirt</p>
-            <p class="fw-bold">$ 45.50</p>
+            <p class="text-capitalize my-1">  Summer Ready Ethnic</p>
+            <p class="fw-bold">>₹ 845.50</p>
            </div>
         </div>
       </div>
@@ -305,7 +336,7 @@
         
         <div class="text-center">
           <p class="text-capitalize mt-3 mb-1">Kalini ethinic</p>
-          <span class="fw-bold d-block">&#8377 1,695</span>
+          <span class="fw-bold d-block">₹ 1,695</span>
           <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
         </div>
 
@@ -318,7 +349,7 @@
         
         <div class="text-center">
           <p class="text-capitalize mt-3 mb-1">Anouk Floral</p>
-          <span class="fw-bold d-block">&#8377 1,763</span>
+          <span class="fw-bold d-block">₹ 1,763</span>
           <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
         </div>
 
@@ -331,7 +362,7 @@
         
         <div class="text-center">
           <p class="text-capitalize mt-3 mb-1">Swadeshi Shringaar</p>
-          <span class="fw-bold d-block">&#8377 1,599</span>
+          <span class="fw-bold d-block">₹ 1,599</span>
           <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
         </div>
 
@@ -365,9 +396,49 @@
       </div>
     </div>
   </section>
+  <!-- Scrolling section for images : single row images -->
+<section class="scrolling-images">
+  <div class="scroll-container">
+      <div class="scroll-item">
+          <img src="https://m.media-amazon.com/images/I/71X5DF+c+gL._SX569_.jpg" alt="New products">
+          <p>Kurtas & Kuta Sets</p>
+      </div>
+      <div class="scroll-item">
+          <img src="https://lajreedesigner.com/cdn/shop/products/ShrijiAvadh-Sahityasilk-Maroon_7_500x750_crop_center.jpg?v=1669794549" alt="Storage & Organisation">
+          <p>Saree</p>
+      </div>
+      <div class="scroll-item">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSpYLZUtoXreww8zWchjbko_Z6jHkkNHLM04XsK6d1RlcSKF47_rDsLPDatWiF9bdJMV7RyzhQFcKzDZCpjplHQ1SCsYdJwCsA-5pjL4z8T" alt="Furniture">
+          <p>Lehenga</p>
+      </div>
+      <div class="scroll-item">
+          <img src="https://images.meesho.com/images/products/470956851/iflex_1200.jpg" alt="Home textiles">
+          <p>Frock</p>
+      </div>
+      <div class="scroll-item">
+          <img src="https://images.pexels.com/photos/30724062/pexels-photo-30724062/free-photo-of-black-and-white-portrait-of-confident-teenager-indoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Decoration">
+          <p>Tops & Teens</p>
+      </div>
+      <div class="scroll-item">
+        <img src="https://images.pexels.com/photos/18731384/pexels-photo-18731384/free-photo-of-a-woman-in-a-brown-dress-posing-on-steps.jpeg?auto=compress&cs=tinysrgb&w=600" alt="New products">
+        <p>Western Wear</p>
+    </div>
+      <div class="scroll-item">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTU_ilMdR0WH6EEO_cLW42aRepIimp6oTGu-4nGIi5Q8D1WL1VtgV6W09cbbyY8H_mqb3DbrAvYrdFy0LioiEQWUEko_ZG05hHRdn_ABgGVFBzlycIo094w6-HF9S3Mxu6VDzdpqXJCA3Y&usqp=CAc" alt="Lighting">
+        <p>Winter Outfit</p>
+    </div>
+      <div class="scroll-item">
+        <img src=" https://images.meesho.com/images/products/468418136/qskks_1200.jpg" alt="Lighting">
+        <p>Maxi Dress</p>
+    </div>
+   
+
+ 
+</div>
+</section>
 
   <!-- blogs -->
-  <section id = "blogs" class = "py-5">
+  <!-- <section id = "blog" class = "py-5">
     <div class = "container">
         <div class = "title text-center py-5">
             <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
@@ -416,17 +487,19 @@
             </div>
           </div>
       </div>
-  </section>
+  </section> -->
+  
+
   <!-- end of blogs -->
    <!-- about us -->
-   <div class="container col-xxl-8 px-4 py-5">
+   <div id="aboutus" class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="https://plus.unsplash.com/premium_photo-1661370380984-d8054132dec0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Us</h1>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi, illum doloremque vero at tempora soluta obcaecati! Provident, exercitationem voluptatibus beatae perspiciatis fugiat quos dolorem quaerat doloribus sed atque voluptas!</p>
+        <p class="lead">Explore our collection of genuine, top-notch products featuring a wide array of designs.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button
           type="button"
@@ -689,22 +762,268 @@
       </div>
     </div>
   </div>
-     <!-- footer -->
-     <footer class = "bg-dark py-5" id="footer">
-      <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">About</a></li>
-          </ul>
-          <p class="text-center text-body-light">© 2025 ATTIRE, Inc</p>
-        </footer>
-      </div>
-  </footer>
 
+
+  <div class="container px-4 pb-4 " id="featured-3">
+    <!-- <h2 class="pb-2 border-bottom">Services</h2> -->
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <i class="fa-solid fa-truck-fast fa-bounce bi"></i>
+        </div>
+        <h3 class="fs-3 text-body-secondary">Flat Shipping
+        </h3>
+        <p>
+          Get your order promptly delivered across India within 2 to 5 days at no extra shipping cost.</p>
+
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary  fs-2 mb-3">
+          <i class="fa-solid fa-headphones fa-beat bi"></i>
+        </div>
+        <h3 class="fs-3 text-body-secondary">Friendly Support All Time</h3>
+        <p>We're here round the clock to assist you with any queries or
+          uncertainties you may have.</p>
+
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <i class="fa-solid fa-medal fa-beat bi"></i>
+        </div>
+        <h3 class="fs-3 text-body-secondary">Authentic Products</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+
+      </div>
+    </div>
   </div>
+
+  
+
+  <div class="container">
+    <h2 class="text-center text-dark">Shop from our latest collections</h2>
+    <div class="product-grid-sec">
+      <div class="row pt-4 mx-n2 g-4" id="latest-product-listing">
+        <!-- Product 1 -->
+        <div class="col-6 col-md-4 col-lg-3 d-flex">
+          <div class="product-item mb-4">
+            <div class="product-image">
+              <a href="">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQgxcIt6KwWE_3RhkgdruccupRuZKhHSxSL-SOKtqCp74fyMAE0XpPhhS8i3jdsa7LvUE4g0BV2i6yejiyou0G-TI_GPj27fkPhgL8zvI1g6NvVA0K_09Ez" alt="Product 1">
+              </a>
+              <div class="product-actions">
+                <button class="btn-addto-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+              </div>
+            </div>
+            <div class="product-item-details">
+              <div class="product-item-name"><a href="">Fusion Western</a></div>
+              <div class="price-box"><span class="price">₹1550.00</span></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 2 -->
+        <div class="col-6 col-md-4 col-lg-3 d-flex">
+          <div class="product-item mb-4">
+            <div class="product-image">
+              <a href="">
+                <img src="https://www.ffashion.in/cdn/shop/products/fusion-fashion-indo-western-lucknavi-work-peach-gown-9509.jpg?v=1705138938&width=2953" alt="Product 2">
+              </a>
+              <div class="product-actions">
+                <button class="btn-addto-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+              </div>
+            </div>
+            <div class="product-item-details">
+              <div class="product-item-name"><a href="">Lucknavi Work Gown</a></div>
+              <div class="price-box"><span class="price">₹750.00</span></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Repeat for Products 3 to 8 -->
+        <!-- Product 3 -->
+        <div class="col-6 col-md-4 col-lg-3 d-flex">
+          <div class="product-item mb-4">
+            <div class="product-image">
+              <a href="">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSCV5fE6pQPQ14lXWAEQAdG8blomQdPSwmUuJ6taEDnOYXjjYuezaU5b-KL6MJj157OzLTw1rWqXH6nu1YTPuNG0dfs8a2OX926W1tz-CNqmmWmthhBemfFSw" alt="Product 3">
+              </a>
+              <div class="product-actions">
+                <button class="btn-addto-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+              </div>
+            </div>
+            <div class="product-item-details">
+              <div class="product-item-name"><a href="">Anarkali Kurta</a></div>
+              <div class="price-box"><span class="price">₹850.00</span></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 4 -->
+        <div class="col-6 col-md-4 col-lg-3 d-flex">
+          <div class="product-item mb-4">
+            <div class="product-image">
+              <a href="">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSMt9PWh4PefW_DruGFTAGhRX0Wz1pGYiXbH7RAgA49P34rv3lxOhB-hTDX7AMvBg3CeLI1p2v9Um0lkbnDLT1mF9IdBZPwZ5O1HFmySzE" alt="" class="w-100">
+              </a>
+              <div class="product-actions">
+                <button class="btn-addto-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+                <!-- <button type="button" class="btn btn-outline-secondary">Buy Now</button> -->
+              </div>
+            </div>
+            <div class="product-item-details">
+              <div class="product-item-name"><a href="">Pink Color Lehenga</a></div>
+              <div class="price-box"><span class="price">₹1950.00</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 d-flex">
+          <div class="product-item mb-4">
+            <div class="product-image">
+              <a href="">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTqIIHn1TbCkQqYO2OG_qGRyKs4t6tlifMPc1CH56Q49jJ1td56bp96SMNj1PVRKrMyrQ8KLVutgvMe7HxvuOo8T-Vjm6UyJ6zX2wGiSmgQgH-2Yw4o7FdX&usqp=CAc" alt="Product 1">
+              </a>
+              <div class="product-actions">
+                <button class="btn-addto-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+              </div>
+            </div>
+            <div class="product-item-details">
+              <div class="product-item-name"><a href="">Product 1</a></div>
+              <div class="price-box"><span class="price">₹1550.00</span></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 2 -->
+        <div class="col-6 col-md-4 col-lg-3 d-flex">
+          <div class="product-item mb-4">
+            <div class="product-image">
+              <a href="">
+                <img src="https://d2x02matzb08hy.cloudfront.net/img/clothing/hero_image/78126298/kzkygyyzwhrypjev4z62.jpg" alt="Product 2">
+              </a>
+              <div class="product-actions">
+                <button class="btn-addto-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+              </div>
+            </div>
+            <div class="product-item-details">
+              <div class="product-item-name"><a href="">Moss & Melanga</a></div>
+              <div class="price-box"><span class="price">₹750.00</span></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Repeat for Products 3 to 8 -->
+        <!-- Product 3 -->
+        <div class="col-6 col-md-4 col-lg-3 d-flex">
+          <div class="product-item mb-4">
+            <div class="product-image">
+              <a href="">
+                <img src="https://www.karmadori.com/cdn/shop/files/DRSFRRI06-A.jpg?v=1729969403&width=1200" alt="Product 3">
+              </a>
+              <div class="product-actions">
+                <button class="btn-addto-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+              </div>
+            </div>
+            <div class="product-item-details">
+              <div class="product-item-name"><a href="">Karmadori</a></div>
+              <div class="price-box"><span class="price">₹850.00</span></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 4 -->
+        <div class="col-6 col-md-4 col-lg-3 d-flex">
+          <div class="product-item mb-4">
+            <div class="product-image">
+              <a href="">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20221123/94og/637e1aa3f997ddfdbd93e9e1/-473Wx593H-463666961-navy-MODEL2.jpg" alt="" class="w-100">
+              </a>
+              <div class="product-actions">
+                <button class="btn-addto-cart"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+                <!-- <button type="button" class="btn btn-outline-secondary">Buy Now</button> -->
+              </div>
+            </div>
+            <div class="product-item-details">
+              <div class="product-item-name"><a href="">Azira</a></div>
+              <div class="price-box"><span class="price">₹950.00</span></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Add Products 5 to 8 similarly -->
+      </div>
+  
+      <!-- View More Button -->
+      <div class="col-12 text-center mt-16">
+        <button type="button" id="new_arrival_load_more" class="btn custom-btn mt-4 ">View More Products</button>
+      </div>
+    </div>
+  </div>
+     <!-- footer -->
+     <div id="footer" class="container mt-45">
+      <footer class="py-5 pt-16">
+        <div class="row g-4"> <!-- Added g-4 for consistent gap between columns -->
+          <div class="col-6 col-md-2 mb-3 pe-3">
+            <h5>About Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0  text-color">Phone: 0120-420-0222</a></li>
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0  text-color">Email: customer@attire.com</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>HELP</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0  text-color">Track My Order</a></li>
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0  text-color">Terms & Conditions</a></li>
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0  text-color">Return, Refund & Exchange Policy</a></li>
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0  text-color">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0  text-color">Contact Us</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-color">Home</a></li>
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-color">Our Story</a></li>
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-color">Blogs</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Attire, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href=""><i class="fa-brands fa-facebook fa-beat" width="24" height="24"></i></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href=""><i class="fa-brands fa-instagram fa-beat" width="24" height="24"></i></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href=""><i class="fa-brands fa-linkedin fa-beat" width="24" height="24"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+
+
+
 </body>
 </html>
